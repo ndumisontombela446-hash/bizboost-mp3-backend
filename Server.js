@@ -8,7 +8,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
-const JAMENDO_CLIENT_ID = "e55a41dd";
+const JAMENDO_CLIENT_ID = process.env.JAMENDO_CLIENT_ID;
 
 
 app.get("/", (req, res) => {
